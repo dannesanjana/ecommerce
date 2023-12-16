@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    body{
+      background-color: rgb(161, 210, 205);
+
+    }
+  </style>
+<center><h2><div class="card">
+<b>Cart:</b><br>
+{% for i in items %}
+{{i.product}}<br>
+{% endfor %}
+Pay: {{total}}
+<h1>Show me the money!</h1>
+<!-- writes out the form tag automatically -->
+{{ form.render }}
+{% endblock %}
+</div>
+</center></h2>
